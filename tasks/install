@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+self=$(readlink -f $0); tasks=`dirname ${self}`; projectRoot=`dirname ${tasks}`;
+cp $projectRoot/bin/base ~/.local/bin/base && chmod +x ~/.local/bin/base;
